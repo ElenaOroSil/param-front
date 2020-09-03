@@ -9,13 +9,15 @@ import { ParmaddComponent } from './Parametros/parmadd/parmadd.component';
 import { FormsModule } from '@angular/forms';
 import { ParametroService } from '../app/Service/parametro.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ParmdelComponent } from './Parametros/parmdel/parmdel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ParmlistComponent,
     ParmeditComponent,
-    ParmaddComponent
+    ParmaddComponent,
+    ParmdelComponent
   ],
   imports: [
     BrowserModule,
