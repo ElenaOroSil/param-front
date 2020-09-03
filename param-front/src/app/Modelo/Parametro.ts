@@ -112,5 +112,6 @@ export class Parametro{
     limdebmes:number;
     limcredia:number;
     limdebdia:number;
+    variable1:number;
    
 }
