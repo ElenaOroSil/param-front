@@ -13,10 +13,4 @@ export class ParmdelComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  /* hola */
-  /* hola */ 
-  /* hola */ 
-  /*ahermed*/
-  
 }
