@@ -1,0 +1,53 @@
+<div class="card">
+    <div class="card-header">
+        <h3>Productos</h3>
+    </div>
+
+    <div class="content" role="main">
+
+        <div class="card-title text-left">
+            <button (click)="Nuevoprod()" class="btn btn-info">Nuevo registro</button>
+        </div>
+    </div>
+
+    <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+                <tr class="text-center">
+                    <th>CODENT</th>
+                    <th>PRODUCTO</th>
+                    <th>SUBPRODU</th>
+                    <th>VERTIENTE</th>
+                    <th>CLAMON</th>
+                    <th>DESPROD</th>
+                    <th>DESPRODRED</th>
+                    <th>FECHA ALTA</th>
+                    <th>INDRIESGO</th>
+                    <th>LIMCRECTAMIN</th>
+                    <th>LIMCRECTAMAX</th>
+                    <th>LIMCRECOMPMIN</th>
+                    <th>LIMCRECOMPMAX</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let producto of producto" class="text-center">
+                    <td>
+                        <a ng-click="Editarprod(producto)">{{producto.codent}}</a>
+                    </td>
+                    <td>{{producto.producto}}</td>
+                    <td>{{producto.subprodu}}</td>
+                    <td>{{producto.vertiente}}</td>
+                    <td>{{producto.clamon}}</td>
+                    <td>{{producto.desprod}}</td>
+                    <td>{{producto.desprodred}}</td>
+                    <td>{{producto.fecalta}}</td>
+                    <td>{{producto.indriesgo}}</td>
+                    <td>{{producto.limcrectamin}}</td>
+                    <td>{{producto.limcrectamax}}</td>
+                    <td>{{producto.limcrecompmin}}</td>
+                    <td>{{producto.limcrecompmax}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

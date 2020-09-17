@@ -11,13 +11,17 @@ import { ParametroService } from '../app/Service/parametro.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ParmdelComponent } from './Parametros/parmdel/parmdel.component';
 
+import { ListarprodComponent } from './Producto/listarprod/listarprod.component';
+import { ProductoService } from './Service/producto.service';
+
 @NgModule({
   declarations: [
     AppComponent,
     ParmlistComponent,
     ParmeditComponent,
     ParmaddComponent,
-    ParmdelComponent
+    ParmdelComponent,
+    ListarprodComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,7 @@ import { ParmdelComponent } from './Parametros/parmdel/parmdel.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [ParametroService],
+  providers: [ParametroService, ProductoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -16,4 +16,10 @@ export class AppComponent {
   Nuevoparametro(){
     this.router.navigate(["addparm"]);
   }
+
+  Listarproducto() {
+    this.router.navigate(["listarprod"]);
+  }
+
+  
 }
