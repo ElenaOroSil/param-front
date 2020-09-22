@@ -1,0 +1,38 @@
+<div class="container col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h3>Agregar 026</h3>
+      </div>
+      <div class="card-body">
+        <form action="">
+          <div class="form-group">
+            <label for="">Entidad:</label>
+            <input [(ngModel)]="mpdt026.codent" name="codent" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Marca:</label>
+            <input [(ngModel)]="mpdt026.codmar" name="codmar" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Tipo:</label>
+            <input [(ngModel)]="mpdt026.indtipt" name="indtipt" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Clase:</label>
+            <input [(ngModel)]="mpdt026.clase" name="clase" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Descripcion:</label>
+            <input [(ngModel)]="mpdt026.destipt" name="destipt" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">RED:</label>
+            <input [(ngModel)]="mpdt026.destiptred" name="destiptred" type="text" class="form-control">
+          </div>
+
+          <button (click)="Guardar026()" class="btn btn-danger">Guardar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+

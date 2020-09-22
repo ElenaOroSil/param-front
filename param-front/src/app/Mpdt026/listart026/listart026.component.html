@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="card-header">
+    <h3>Mpdt026</h3>
+  </div>
+  <div class="card-body">
+    <table class="table table-hover">
+      <thead>
+        <tr class="text-center">
+          <th>ENTIDAD</th>
+          <th>Codigo de marca</th>
+          <th>Tipo de tarjeta</th>
+          <th>clase</th>
+          <th>Descripcion Tipo</th>
+          <th>Descripcion tipo RED</th>              
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let mpdt026 of mpdt026s" class="text-center">
+          <td>{{mpdt026.codent}}</td>
+          <td>{{mpdt026.codmar}}</td>
+          <td>{{mpdt026.indtipt}}</td>
+          <td>{{mpdt026.clase}}</td>
+          <td>{{mpdt026.destipt}}</td>
+          <td>{{mpdt026.destiptred}}</td>
+          <td>
+            <button (click)="Editar026(mpdt026)" class="btn btn-warning">Editar</button>
+            <button (click)="deleteMpdt026(mpdt026)" class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -21,5 +21,12 @@ export class AppComponent {
     this.router.navigate(["listarprod"]);
   }
 
-  
+  Nuevo026(){
+    this.router.navigate(["addt026"])
+  }
+
+  Listar026Component(){
+    this.router.navigate(["lista026"]);
+  }
+
 }
