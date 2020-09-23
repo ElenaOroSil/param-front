@@ -13,6 +13,8 @@ export class Listar026Component implements OnInit {
   mpdt026s:Mpdt026[]; 
   constructor(private service:Mpdt026Service, private router:Router) { }
 
+  /*jasg*/
+  
   ngOnInit(): void {
     this.service.getMpdt026()
     .subscribe(data => {
