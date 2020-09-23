@@ -3,7 +3,8 @@ import { Router} from '@angular/router';
 import { Mpdt026Service} from '../../Service/mpdt026.service';
 import { Mpdt026} from 'src/app/Modelo/Mpdt026';
 
-
+/*jasg*/
+ 
 @Component({
   selector: 'app-listar026',
   templateUrl: './listart026.component.html',
