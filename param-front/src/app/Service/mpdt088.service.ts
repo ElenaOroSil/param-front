@@ -11,21 +11,21 @@ export class Mpdt088Service {
 
   Url='http://localhost:8080/mpdt088';
 
-  getMpparamsat(){
+  getMpdt088(){
     return this.http.get<Mpdt088[]>(this.Url);
   }
-  createMpparamsat(data:Mpdt088){
+  createMpdt088(data:Mpdt088){
     console.log("data")
     console.log(data)
     return this.http.post<Mpdt088>(this.Url,data);
   }
-  getMpparamsatId(codent:String,producto:String, subprodu:String){
+  getMpdt088Id(codent:String,producto:String, subprodu:String){
     return this.http.get<Mpdt088>(this.Url+"/"+codent+producto+subprodu);
   }
-  updateMpparamsat(data:Mpdt088){
+  updateMpdt088(data:Mpdt088){
       return this.http.put<Mpdt088>(this.Url,data);
   }
-  deleteMpparamsat(codent:String,producto:String, subprodu:String){
+  deleteMpdt088(codent:String,producto:String, subprodu:String){
 
     console.log(codent+ " " +producto+ " " +subprodu)
     return this.http.delete<Mpdt088
