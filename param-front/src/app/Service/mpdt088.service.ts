@@ -25,9 +25,9 @@ export class Mpdt088Service {
   updateMpparamsat(data:Mpdt088){
       return this.http.put<Mpdt088>(this.Url,data);
   }
-  deleteMpparamsat(codent:String,producto:String, subprodu:String){
+  deleteMpparamsat(codent:String,centalta:String,producto:String, subprodu:String, condpro:String){
 
-    console.log(codent+ " " + " " +producto+ " " +subprodu)
+    console.log(codent+ " " +producto+ " " +subprodu)
     return this.http.delete<Mpdt088
     >(this.Url+"/"+codent+producto+subprodu);
   }
